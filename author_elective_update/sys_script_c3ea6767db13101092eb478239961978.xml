@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition>previous.assigned_to.name == "Luke Wilson" &amp;&amp; gs.hasRole("admin")</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p><img style="align: baseline;" title="" src="10startoff.pngx" alt="" width="40" height="40" align="bottom" border="" hspace="" vspace="" /></p>
+<p><span style="background-color: #808000;">Test string</span></p>
+<p><span style="font-size: 12pt;"><strong><span style="background-color: #ffffff; color: #ff0000;">Now you are the owner of this ticket..</span></strong></span></p>]]></message>
+        <name>SUN - Test</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	gs.info("Test log message, Inc"+current.number+"assigned to"+current.assigned_to.name);
+	gs.addInfoMessage("Business rule matched - SUN - Test");
+	gs.addErrorMessage("Previous value: "+previous.assigned_to.name);
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-23 10:57:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c3ea6767db13101092eb478239961978</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>SUN - Test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_c3ea6767db13101092eb478239961978</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-24 13:32:15</sys_updated_on>
+        <template>assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=c3ea6767db13101092eb478239961978"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>da2d9f56dbe537440b9d21c405961986</instance_id>
+        <instance_name>dev86521</instance_name>
+        <name>sys_script_c3ea6767db13101092eb478239961978</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;true&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition&gt;previous.assigned_to.name == "Luke Wilson" &amp;amp;&amp;amp; gs.hasRole("admin")&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message&gt;&lt;![CDATA[&lt;p&gt;&lt;img style="align: baseline;" title="" src="10startoff.pngx" alt="" width="40" height="40" align="bottom" border="" hspace="" vspace="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="background-color: #808000;"&gt;Test string&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;&lt;span style="background-color: #ffffff; color: #ff0000;"&gt;Now you are the owner of this ticket..&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/message&gt;&lt;name&gt;SUN - Test&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	gs.info("Test log message, Inc"+current.number+"assigned to"+current.assigned_to.name);
+	gs.addInfoMessage("Business rule matched - SUN - Test");
+	gs.addErrorMessage("Previous value: "+previous.assigned_to.name);
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-23 10:57:31&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c3ea6767db13101092eb478239961978&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;SUN - Test&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_c3ea6767db13101092eb478239961978&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-24 13:32:15&lt;/sys_updated_on&gt;&lt;template&gt;assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ&lt;/template&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c3ea6767db13101092eb478239961978"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1667866858</payload_hash>
+        <record_name>SUN - Test</record_name>
+        <reverted_from/>
+        <source>39f623a3db13101092eb47823996194d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-24 13:32:15</sys_created_on>
+        <sys_id>ad3c55c0db23101092eb4782399619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174c0507ff70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-24 13:32:15</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>653c55c0b12310106e60c416fc769dab</update_guid>
+        <update_guid_history>653c55c0b12310106e60c416fc769dab:1667866858,d48b19c041231010776ff929a006e72a:-1960001838,6d0b5980d223101047e6aa2ba19c2645:-862948670,74683bafde131010dae310f39ac7e228:1311227783,c7187b6f79131010a03278cfdb747336:-1268457719,66e63b6f49131010e2e899c6059a91fb:-2078580654,77a6736f9d13101073825e5fd9cb22e8:1527716745,a6767b2fef131010d76c36dd47271c2f:658501245,f056736f1e13101067217e7c0dd3a973:-417088096,97b5fb2f571310101627b0e2675fd4dd:1719086728,3625732f261310106abbbae7eea1293f:952672279,1dc0b7e771131010b1cfda9da143ca17:-417657370,813f2f67ed131010e9b0c59f8187380d:-1499423423</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-30 05:29:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>209a77f4df284e30864a0a35f5888900</sys_id>
+        <sys_metadata>c3ea6767db13101092eb478239961978</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SUN - Test</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Incident">fbe9cd301cd20010785061945362ad0a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_c3ea6767db13101092eb478239961978</sys_update_name>
+        <sys_update_version display_value="sys_script_c3ea6767db13101092eb478239961978">ad3c55c0db23101092eb4782399619ab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-30 05:29:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
